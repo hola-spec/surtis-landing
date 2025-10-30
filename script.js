@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const telefono = document.getElementById('telefono').value;
 
         // IMPORTANTE: Reemplaza 'TU_URL_DE_APPS_SCRIPT' con la URL que obtuviste de Google Apps Script
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzSOwFRteq6XdjYF8APtxpreGReAvdVb-frHUyXkizbu6UjL1vJ1yRCotHj-QyK7fbvbw/exec';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzvkQvCrZjZ6LiXDiAt4n6o9hoc93_zShNwW1Wi72DqnU4mPu9vZ7obuuOwz00F7vA/exec';
 
         console.log('Enviando datos...', {nombre, compro, email, telefono});
 
@@ -140,3 +140,4 @@ function currentSlide(index) {
 setInterval(function() {
     changeSlide(1);
 }, 5000); // Cambia de slide cada 5 segundos
+
