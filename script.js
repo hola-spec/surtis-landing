@@ -140,4 +140,3 @@ function currentSlide(index) {
 setInterval(function() {
     changeSlide(1);
 }, 5000); // Cambia de slide cada 5 segundos
-
