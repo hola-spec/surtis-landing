@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURTIS - Productos y Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navegación -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo-link">
+                <img src="Imagenes/logo surtis.png" alt="SURTIS Logo" class="header-logo">
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="#surtis">SURTIS</a>
+                <a href="#productos">PRODUCTOS</a>
+                <a href="#promociones">PROMOCIONES</a>
+                <a href="#ubicacion">UBICACIÓN</a>
+                <a href="#formulario">CONTACTO</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección 1: Surtis -->
+    <section id="surtis" class="surtis-section">
+        <div class="container">
+            <div class="surtis-content">
+                <div class="surtis-text">
+                    <p class="tagline">Ayudamos a pequeños negocios a surtirse de forma inteligente, rápida y económica</p>
+                    <p class="location">Ubicados en el corazón de La Merced, CDMX</p>
+                    <a href="#formulario" class="cta-button">Quiero que me contacten</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de Imágenes de Tienda -->
+    <section class="tienda-carousel-section">
+        <div class="tienda-carousel-container">
+            <div class="tienda-carousel">
+                <div class="tienda-slide active">
+                    <img src="Imagenes/surtis1.png" alt="SURTIS 1" class="tienda-carousel-img">
+                </div>
+                <div class="tienda-slide">
+                    <img src="Imagenes/surtis2.png" alt="SURTIS 2" class="tienda-carousel-img">
+                </div>
+                <div class="tienda-slide">
+                    <img src="Imagenes/surtis3.png" alt="SURTIS 3" class="tienda-carousel-img">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Productos -->
+    <section id="productos" class="productos-section">
+        <div class="container">
+            <h2>Productos</h2>
+            <p class="section-subtitle">Somos distribuidores especiales de las mejores marcas</p>
+            
+            <!-- Slider de Marcas -->
+            <div class="marcas-slider-wrapper">
+                <div class="marcas-slider">
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA1-1.png" alt="Marca 1" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA2-1.png" alt="Marca 2" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA4-1.png" alt="Marca 4" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA5-1.png" alt="Marca 5" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/Padova-premium.png" alt="Padova Premium" class="marca-logo-img">
+                    </div>
+                    <!-- Duplicados para efecto infinito -->
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA1-1.png" alt="Marca 1" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA2-1.png" alt="Marca 2" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA4-1.png" alt="Marca 4" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/MARCA5-1.png" alt="Marca 5" class="marca-logo-img">
+                    </div>
+                    <div class="marca-slide">
+                        <img src="Imagenes/Padova-premium.png" alt="Padova Premium" class="marca-logo-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="Imagenes/embutidos.png" alt="Embutidos" class="producto-imagen">
+                    <h3>Embutidos</h3>
+                    <p>Amplia variedad de embutidos de primera calidad.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="Imagenes/lacteos.png" alt="Lácteos" class="producto-imagen">
+                    <h3>Lácteos</h3>
+                    <p>Productos lácteos frescos y de excelente calidad.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="Imagenes/abarrotes.png" alt="Abarrotes" class="producto-imagen">
+                    <h3>Abarrotes</h3>
+                    <p>Surte tu negocio con productos de abarrotes.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="Imagenes/carnicos.png" alt="Cárnicos" class="producto-imagen">
+                    <h3>Cárnicos</h3>
+                    <p>Carnes frescas y de la mejor calidad.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="Imagenes/congelados.png" alt="Congelados" class="producto-imagen">
+                    <h3>Congelados</h3>
+                    <p>Productos congelados para mantener la frescura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Promociones y Beneficios -->
+    <section id="promociones" class="promociones-section">
+        <div class="container">
+            <h2>Promociones y Beneficios</h2>
+            <div class="promociones-content">
+                <div class="promocion-item">
+                    <h3>💵 Cashback Especial</h3>
+                    <p>Hasta 5% de cashback en todas tus compras</p>
+                </div>
+                <div class="promocion-item">
+                    <h3>💰 Descuentos Mayoreo</h3>
+                    <p>Descuentos directos en compras de mayoreo</p>
+                </div>
+                <div class="promocion-item">
+                    <h3>📧 Promociones Exclusivas</h3>
+                    <p>Recibe nuestras promociones especiales</p>
+                </div>
+            </div>
+            <div class="promociones-form">
+                <h3>Suscríbete a nuestras promociones</h3>
+                <form id="promocionesForm" class="promo-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="promo-button">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Formulario de Contacto -->
+    <section id="formulario" class="formulario-section">
+        <div class="container">
+            <h2>Formulario de Contacto</h2>
+            <p class="subtitle">Déjanos tus datos y te contactaremos pronto</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="compro">Compro para: *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="compro" value="negocio" required>
+                            Negocio
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="compro" value="hogar" required>
+                            Hogar
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <p>¡Gracias por contactarnos! Te responderemos pronto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="ubicacion-section">
+        <div class="container">
+            <a href="https://maps.app.goo.gl/MegrNreGrpSueaZ46" target="_blank" class="location-link">
+                <h2>Ubicación</h2>
+            </a>
+            <p class="subtitle">Ven a visitarnos</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4699!2d-99.125!3d19.4286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzQzLjAiTiA5OcKwMDcjMzAuMCJX!5e0!3m2!1ses!2smx!4v1234567890" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="address">Abraham Olvera 50, La Merced, CDMX</p>
+        </div>
+    </section>
+
+    <!-- Sección 5: Pie de Página -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SURTIS</h3>
+                    <p>Abraham Olvera 50, La Merced, CDMX</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horario</h4>
+                    <p>Lunes a Sábado: 7am a 4pm</p>
+                    <p>Domingos: 8am a 2:30pm</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Tel: 55 5196 0021</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1ExH64WsTf/" target="_blank" class="social-icon" title="Facebook">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/525551960021" target="_blank" class="social-icon whatsapp-icon" title="WhatsApp">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SURTIS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/525551960021" target="_blank" class="whatsapp-float" title="Contáctanos por WhatsApp">
+        <svg width="32" height="32" fill="white" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
